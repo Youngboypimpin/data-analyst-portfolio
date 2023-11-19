@@ -1,33 +1,61 @@
+/* style.css */
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  section {
-    max-width: 800px;
-    margin: 2rem auto;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Add a simple hover effect for list items */
+ul li:hover {
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  transform: translateY(100%); /* Initially move the footer off the screen */
+}
+
+/* Add a smooth transition effect for hover */
+ul li {
+  transition: background-color 0.3s ease;
+}
+
+/* Reduce margin between body content and footer */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Show the footer when scrolling up */
+body.show-footer footer {
+  transform: translateY(0);
+}

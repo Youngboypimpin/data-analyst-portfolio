@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import { toggleFooterVisibility } from './scrollToggle';
 import './app.css';
 
 function App() {
+  // Run the toggleFooterVisibility logic on mount
+  useEffect(() => {
+    toggleFooterVisibility();
+
+    // Attach the toggleFooterVisibility function to the window's scroll event
+    window.addEventListener('scroll', toggleFooterVisibility);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', toggleFooterVisibility);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+
   return (
     <div className="App">
       <Header />
