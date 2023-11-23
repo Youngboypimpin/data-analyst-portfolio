@@ -94,6 +94,7 @@ nav ul.horizontal-menu li:last-child {
   margin-right: 0;
 }
 
+
 nav ul.horizontal-menu li a {
   text-decoration: none;
   color: black; /* Change this to your desired text color */
@@ -103,8 +104,10 @@ nav ul.horizontal-menu li a {
 
 nav ul.horizontal-menu li a:hover {
   text-decoration: underline;
-  transform: none; /* Remove the transform on hover */
+  background-color: transparent; /* Set the background color to transparent on hover */
+  transform: scale(1.05); /* Add a slight pop-out effect on hover */
 }
+
 
 /* Remove the highlight effect on hover */
 nav ul.horizontal-menu li a:focus,
