@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <h1>Patrick Aigbogun - Data Analyst</h1>
       <nav>
-        <ul>
+        <ul className="horizontal-menu">
           <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>

@@ -71,3 +71,46 @@ ul li {
 section {
   margin-bottom: 120px; /* Increase margin to create space for the footer */
 }
+/* styles.css */
+
+/* ... your existing styles ... */
+
+nav {
+  text-align: center;
+}
+
+nav ul.horizontal-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center; /* Center the menu horizontally */
+}
+
+nav ul.horizontal-menu li {
+  margin-right: 20px;
+}
+
+nav ul.horizontal-menu li:last-child {
+  margin-right: 0;
+}
+
+nav ul.horizontal-menu li a {
+  text-decoration: none;
+  color: black; /* Change this to your desired text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  transition: text-decoration 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav ul.horizontal-menu li a:hover {
+  text-decoration: underline;
+  transform: none; /* Remove the transform on hover */
+}
+
+/* Remove the highlight effect on hover */
+nav ul.horizontal-menu li a:focus,
+nav ul.horizontal-menu li a:active,
+nav ul.horizontal-menu li a {
+  outline: none;
+  background-color: transparent;
+}
+
