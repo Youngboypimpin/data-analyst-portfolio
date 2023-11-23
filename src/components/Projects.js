@@ -1,9 +1,10 @@
+// Projects.js
 import React from 'react';
 import '../styles.css';
 
 const Projects = () => {
   return (
-    <section>
+    <section className="project-section"> {/* Change ID to className */}
       <h2>Projects</h2>
       <p>
         Here are some of my projects. You can find more on my{' '}

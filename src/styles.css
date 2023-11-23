@@ -23,6 +23,12 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
+.project-section {
+  margin-bottom: 80px; /* Adjust the value as needed */
+  position: relative; /* Ensure it's positioned relative to the nearest positioned ancestor */
+  z-index: 2; /* Set a higher z-index */
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -41,8 +47,19 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  z-index: 1; /* Set a lower z-index */
   transform: translateY(100%); /* Initially move the footer off the screen */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Show the footer when scrolling down */
+body:not(.show-footer) footer {
+  transform: translateY(100%);
+}
+
+/* Hide the footer when scrolling up */
+body.show-footer footer {
+  transform: translateY(0);
 }
 
 /* Add a smooth transition effect for hover */
@@ -52,10 +69,5 @@ ul li {
 
 /* Reduce margin between body content and footer */
 section {
-  margin-bottom: 2rem;
-}
-
-/* Show the footer when scrolling up */
-body.show-footer footer {
-  transform: translateY(0);
+  margin-bottom: 120px; /* Increase margin to create space for the footer */
 }
