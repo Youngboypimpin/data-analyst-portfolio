@@ -6,7 +6,7 @@ import '../styles.css';
 const Header = () => {
   return (
     <header>
-      <h1>Patrick Aigbogun - Data Analyst</h1>
+      <h1>Patrick Aigbogun Data Analyst</h1>
       <nav>
         <ul className="horizontal-menu">
           <li><a href="#about">About Me</a></li>
