@@ -21,7 +21,7 @@ const Footer = () => {
           <h3>Downloads</h3>
           <ul>
             <li>
-              <a href="/path/to/your/resume.pdf" download>
+              <a href="src\files\PATRICK SOD CV.pdf" download>
                 Download Resume
               </a>
             </li>
@@ -47,7 +47,9 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#header">Back to Top</a>
+            <a className="back-to-top" href="#" onClick={() => window.scrollTo(0, 0)}>
+            Back to Top
+          </a>
             </li>
             <li>
               <a href="https://github.com/youngboypimpin" target="_blank" rel="noopener noreferrer">

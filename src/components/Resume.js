@@ -9,7 +9,7 @@ const Resume = () => {
       <p>
         Download my resume to learn more about my skills and experience.
       </p>
-      <a href="/path/to/your/resume.pdf" download>
+      <a href="https://github.com/Youngboypimpin/data-analyst-portfolio/blob/main/src/files/PATRICK%20SOD%20CV.pdf" download>
         Download Resume
       </a>
     </section>
