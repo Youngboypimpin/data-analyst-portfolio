@@ -1,93 +1,18 @@
 /* style.css */
 
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4; /* Light gray background */
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #bdc6bf; 
 }
-
+	
 header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-section {
-  max-width: 800px;
-  margin: 2rem auto;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-}
-section ul li:hover {
-  background-color: #f0f0f0;
-} 
-
-
-.project-section {
-  margin-bottom: 80px; /* Adjust the value as needed */
-  position: relative; /* Ensure it's positioned relative to the nearest positioned ancestor */
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Add a simple hover effect for list items */
-/*section ul li:hover {
-  background-color: #f0f0f0;
-} */
-
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(100%);
-}
-
-.footer-menu {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex-grow: 1;
-}
-
-/* Show the footer when scrolling down */
-body:not(.show-footer) footer {
-  transform: translateY(100%);
-}
-
-/* Hide the footer when scrolling up */
-body.show-footer footer {
-  transform: translateY(0);
-}
-
-/* Add a smooth transition effect for hover */
-ul li {
-  transition: background-color 0.3s ease;
-}
-
-/* Reduce margin between body content and footer */
-section {
-  margin-bottom: 120px; /* Increase margin to create space for the footer */
-}
-/* styles.css */
-
-/* ... your existing styles ... */
+	background-color: #1a371f;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+}  
 
 nav {
   text-align: center;
@@ -95,6 +20,7 @@ nav {
 
 nav a:hover{
   background-color: none;
+  text-decoration-line: none;
 }
 
 nav ul.horizontal-menu {
@@ -115,15 +41,15 @@ nav ul.horizontal-menu li:last-child {
 
 nav ul.horizontal-menu li a {
   text-decoration: none;
-  color: black; /* Change this to your desired text color */
+  color: rgb(255, 255, 255); /* Change this to your desired text color */
   font-size: 16px; /* Adjust the font size as needed */
-  transition: text-decoration 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: text-decoration 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 nav ul.horizontal-menu li a:hover {
   text-decoration: underline;
   background-color: transparent; /* Set the background color to transparent on hover */
-  transform: scale(1.05); /* Add a slight pop-out effect on hover */
+  transform: scale(1.5); /* Add a slight pop-out effect on hover */
 }
 
 
@@ -135,3 +61,33 @@ nav ul.horizontal-menu li a {
   background-color: transparent;
 }
 
+section {
+  max-width: 100%;
+  margin: 5%;
+  background-color: #e9efea;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35); /* Add a subtle box shadow */
+}
+section ul li:hover {
+  background-color: #f0f0f0;
+} 
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer {
+    background-color: #1a371f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.footer-menu {
+  display: contents;
+  max-width: 100%;
+  margin: 0 auto;
+}

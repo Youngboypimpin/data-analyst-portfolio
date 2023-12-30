@@ -5,11 +5,11 @@ import '../styles.css';
 
 const About = () => {
   return (
-    <section>
+    <section id="about" >
       <h2>About Me</h2>
       <p>
         Hello! I am a data analyst passionate about extracting meaningful insights from data.
-        I am proficient in technologies like Python, SQL, Excel, Pandas, and Jupyter.
+        I am proficient in technologies like Python, SQL, Excel, etc.
       </p>
     </section>
   );
