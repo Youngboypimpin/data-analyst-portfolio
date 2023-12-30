@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -26,12 +26,6 @@ section ul li:hover {
   background-color: #f0f0f0;
 } 
 
-
-.project-section {
-  margin-bottom: 80px; /* Adjust the value as needed */
-  position: relative; /* Ensure it's positioned relative to the nearest positioned ancestor */
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -42,44 +36,21 @@ ul {
   background-color: #f0f0f0;
 } */
 
-.footer {
-  background-color: #333;
+footer {
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  z-index: 1;
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(100%);
 }
 
 .footer-menu {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
+  display: block ;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-.footer-section {
-  flex-grow: 1;
-}
 
-/* Show the footer when scrolling down */
-body:not(.show-footer) footer {
-  transform: translateY(100%);
-}
-
-/* Hide the footer when scrolling up */
-body.show-footer footer {
-  transform: translateY(0);
-}
-
-/* Add a smooth transition effect for hover */
-ul li {
-  transition: background-color 0.3s ease;
-}
 
 /* Reduce margin between body content and footer */
 section {
@@ -95,6 +66,7 @@ nav {
 
 nav a:hover{
   background-color: none;
+  text-decoration-line: none;
 }
 
 nav ul.horizontal-menu {
@@ -115,15 +87,15 @@ nav ul.horizontal-menu li:last-child {
 
 nav ul.horizontal-menu li a {
   text-decoration: none;
-  color: black; /* Change this to your desired text color */
+  color: rgb(255, 255, 255); /* Change this to your desired text color */
   font-size: 16px; /* Adjust the font size as needed */
-  transition: text-decoration 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: text-decoration 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 nav ul.horizontal-menu li a:hover {
   text-decoration: underline;
   background-color: transparent; /* Set the background color to transparent on hover */
-  transform: scale(1.05); /* Add a slight pop-out effect on hover */
+  transform: scale(1.5); /* Add a slight pop-out effect on hover */
 }
 
 
