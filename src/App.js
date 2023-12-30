@@ -8,12 +8,12 @@ import Projects from './components/Projects';
 import Contact from './components/Contact'; // Add Contact component
 import Resume from './components/Resume';   // Add Resume component
 import Footer from './components/Footer';
-import { toggleFooterVisibility } from './scrollToggle';
+//import { toggleFooterVisibility } from './scrollToggle';
 import './app.css';
 
 function App() {
   // Run the toggleFooterVisibility logic on mount
-  useEffect(() => {
+  /*useEffect(() => {
     toggleFooterVisibility();
 
     // Attach the toggleFooterVisibility function to the window's scroll event
@@ -23,7 +23,8 @@ function App() {
     return () => {
       window.removeEventListener('scroll', toggleFooterVisibility);
     };
-  }, []); // Empty dependency array ensures the effect runs only once on mount
+  }, []); // Empty dependency array ensures the effect runs only once on mount 
+  */
 
   return (
     <div className="App">

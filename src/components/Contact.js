@@ -10,9 +10,9 @@ const Contact = () => {
         Feel free to reach out to me through the following channels:
       </p>
       <ul>
-        <li>Email: your.email@example.com</li>
-        <li>LinkedIn: linkedin.com/in/yourusername</li>
-        <li>Twitter: @yourtwitterhandle</li>
+        <li>Email: your.email@example.com <i class="fa-solid fa-envelope-open"> </i></li>
+        <li>LinkedIn: linkedin.com/in/yourusername <i class="fa-brands fa-linkedin"> </i></li>
+        <li>Twitter: @yourtwitterhandle<i class="fa-brands fa-x-twitter"></i></li>
       </ul>
     </section>
   );
